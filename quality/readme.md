@@ -5,11 +5,11 @@
 
 By and large, there are 2 kinds of software quality defects.
 
-* Misbehavior (Bug)
+* Correctness. (Misbehavior, Bug)
   * Out of expectation. Wrong in logic, what is expected not happening, something unexpected happens.
   * Security and privacy threats.
   * Crash.
-* Poor performance.
+* Performance (Slow, inefficient)
   * slow and irresponsive
   * run battery fast.
   * inefficient usage of power, network bandwidth, and other system resources.
@@ -19,7 +19,7 @@ By and large, there are 2 kinds of software quality defects.
 
 * Prevention
   * Requirement Verification and Performance Baseline
-  * Architecting/Design (some principle and guideline to follow)
+  * Architecting/Design (some principle and guideline to follow) - Some performance issue are rooted here.
   * Architecture/Design Review
   * Coding (much more than following coding/naming style)
   * Code Review
@@ -31,16 +31,11 @@ By and large, there are 2 kinds of software quality defects.
 
 ### Side-topic: Complexity and Quality
 
-As a common sense, when a thing is simple (in term of scope of feature/requirement and the number of developers getting involved.), quality-wise, it is hard to make it wrong, even it happens to get wrong, it is easy to fix it. For example, if you are writing a numeric calculator app, you are unlikely to run into multi-threading problem, compared with apps connecting to remote servers.
+I do not have to illustrate the point that the higher complexity of software the higher its impacts on quality. If you like to argue it, please see the article [Complexity](complexity).
 
-Comparatively consider this case below:
-* a newly formed team of people work in a product;
-* the existing code base is heterogeneity in programming languages and tool chains;
-* the product has a dynamic and rich set of features,
-* the product have to use many technologies, legacy and novel, home brewed and 3rd party;
-* the product runs on variety of market, culture and geography, office and wilderness.
+This complexity of software is not only by the nature of the project but also introduced through software architecting. Someone may say, "my app is very small in scope, so that I have started coding straightaway. I have no architecture." This cannot be true, just like, not everyone can intellectually describe his own philosophy (that is philosopher's job), that does not mean he *has* no philosophy. As human being, everyone has its way of thinking. Back to software architecture, someone may never think of his software architecture intentionally, that may only mean his architecture is random or inconsistent over time, or not-comprehensive. That introduces unnecessary complexity.
 
-It is complicated and inherently hard for quality assurance. Complexity must worthy of being managed well, especially for the sake of product quality. Since this series of topic is on Quality, I will also address the topic of managing software complexity in architecture and coding practices to help.
+There are boxful of software design tools to help us managing complexity. We will discuss that in [software-arch](software-arch) section.
 
 ## How to avoid quality defeats.
 
