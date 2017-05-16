@@ -1,13 +1,13 @@
 
-SOP-0-init-var-let
+# SOP-0-init-var-let
 
 
-Objectives
+## Objectives
 
 减少编程的随意性(arbitrariness) and/or ambiguity
 
 
-Lazy var vs let
+## Lazy var vs let
 
 
 If let, with = {}(), then in closure you cannot refer to any self-related methods, etc.
@@ -23,7 +23,6 @@ If possible, it is encouraged to bring standalone property building code into le
 
 
 Purpose of properties.
-
 
 
 Let is safer (with more focus scope and lifecycle) than var. which may not be re-assigned other than initial time.

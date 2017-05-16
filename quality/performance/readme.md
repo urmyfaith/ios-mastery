@@ -8,7 +8,7 @@
 ## Categories of Performance Problems
 
 Aspect | Problems | Answers (Programming) | Tools - Instruments | WWDC
---|--|--|--
+--|--|--|--|--
 Memory | (Leaks and over-released led crash) | ARC, avoid retain cycle. | ASan | 2015-413
 CPU/Speed , on UI/Graphics | Slow and irresponsive | multi-threading, | Time Profiler |
 Energy | inefficient | ... | 2014-710 2014-712 2016-720

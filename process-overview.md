@@ -23,8 +23,9 @@ This article lists the steps of iOS app development process, giving your a bird 
 * 7. Performance Profiling (in [quality/performance](quality/performance))
   * 7.1 Performance Overview
   * 7.2 Instruments
-* 8. Release
+* 8. Releasing
   * 8.1 Ad Hoc
   * 8.2 App Store, iTune-Connect
+* 9. Process Improvement. You can probably guess that my ex-employers talked in CMMI and Six Sigma.
 
 The step are purposely numbered for easy reference and ordering through whole website/repository.

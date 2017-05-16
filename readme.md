@@ -29,6 +29,6 @@ I am transferring my local and html-based docs onto GitHub and markdown-based on
 
 ## Others
 
-Feel free to check out XALG -
+Feel free to check out [XALG](https://github.com/between40and2/XALG) - eXtendable ALGorithms - Pure Swift Applied Algorithms for Engineers
 
 Feel free to contact me for any questions. 1847780 at qq dot com
