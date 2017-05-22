@@ -52,3 +52,4 @@ U-B-P	| UnsafeBufferPointer\<Element\> | UnsafeMutableBufferPointer\<Element\>
 
 * [Apple: Swift Standard Library](https://developer.apple.com/reference/swift)
 * [Swift's Pointy Bits: Unsafe Swift & Pointer Types](http://news.realm.io/news/nate-cook-tryswift-tokyo-unsafe-swift-and-pointer-types)
+* https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html
