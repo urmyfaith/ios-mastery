@@ -47,9 +47,37 @@
 ### Notification
 
 
+
 ### KVO
 
+#### Setup/Registration
+
 ```swift
-'NSInternalInconsistencyException', reason: 'An instance 0x17000e730 of class CLHeading was deallocated while key value observers were still registered with it. Current observation info: <NSKeyValueObservationInfo 0x17003e1e0> (
-<NSKeyValueObservance 0x17005aa30: Observer: 0x127e0a740, Key path: trueHeading, Options: <New: YES, Old: NO, Prior: NO> Context: 0x0, Property: 0x17005d040>
+private var _context : Int = 33
+private let keypath_kvo = "person.status"
+func register() {}
+   obj.addObserver(self, forKeyPath: keypath_kvo, options: [NSKeyValueObservingOptions.new, NSKeyValueObservingOptions.prior], context: &_context )
+}
+```
+
+#### Teardown
+This is called in 2 occurrences.
+* when a new value is set to *obj*, in `willSet`
+* at `deinit`
+
+```swift
+func teardown_kvo() {
+  obj.removeObserver(self, forKeyPath: keypath_kvo)
+}
+```
+
+#### Handling updates
+```swift
+override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    if context == &_context { // using context to identify quickly
+
+    }
+
+}
+
 ```
