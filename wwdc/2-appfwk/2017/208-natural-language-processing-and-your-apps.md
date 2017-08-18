@@ -24,7 +24,8 @@ TOC
 
 ```swift
 import Foundation
-let tagger = NSLinguisticTagger(tagSchemes: [.language], options: 0) tagger.string = "Die Kleinen haben friedlich zusammen gespielt." let language = tagger.dominantLanguage
+let tagger = NSLinguisticTagger(tagSchemes: [.language], options: 0) tagger.string = "Die Kleinen haben friedlich zusammen gespielt."
+let language = tagger.dominantLanguage
 ```
 
 ### tokenization
@@ -38,7 +39,8 @@ let range = NSRange(location: 0, length: text.utf16.count)
 let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace]
 tagger.enumerateTags(in: range, unit: .word, scheme: .tokenType, options: options) { tag, tokenRange, stop in
 let token = (text as NSString).substring(with: tokenRange)
-// Do something with each token }
+  // Do something with each token
+}
 ```
 
 ## part of speech
@@ -54,9 +56,10 @@ tagger.string = text
 let range = NSRange(location:0, length: text.utf16.count)
 let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace]
 tagger.enumerateTags(in: range, unit: .word, scheme: .lemma, options: options) { tag, tokenRange, stop in
-if let lemma = tag?.rawValue {
-// Do something with each lemma
-} }
+  if let lemma = tag?.rawValue {
+      // Do something with each lemma
+    }
+}
 ```
 
 ## Demo by Doug
@@ -70,7 +73,8 @@ import Foundation
 let tagger = NSLinguisticTagger(tagSchemes: [.nameType], options: 0)
 let text = "Tim Cook is the CEO of Apple Inc. which is located in Cupertino, California" tagger.string = text
 let range = NSRange(location:0, length: text.utf16.count)
-let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .joinNames] let tags: [NSLinguisticTag] = [.personalName, .placeName, .organizationName]
+let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .joinNames]
+let tags: [NSLinguisticTag] = [.personalName, .placeName, .organizationName]
 tagger.enumerateTags(in: range, unit: .word, scheme: .nameType, options: options) { tag, tokenRange, stop in
     if let tag = tag, tags.contains(tag) {
       let name = (text as NSString).substring(with: tokenRange)
