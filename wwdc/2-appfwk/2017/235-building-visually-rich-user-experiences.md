@@ -12,3 +12,6 @@
 
 
 ## Core Animation Best Practices
+
+
+### model and presentation
