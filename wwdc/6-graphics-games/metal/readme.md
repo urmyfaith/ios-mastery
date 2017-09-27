@@ -32,8 +32,14 @@ Session | Video | Note
 
 Session | Video | Note
 --|--|--
+602 Adopting Metal, Part 1|[Video](https://developer.apple.com/videos/play/wwdc2016/602/)|[Note](2016/602-adopting-metal-part-1.md)
+603 Adopting Metal, Part 2| [Video](https://developer.apple.com/videos/play/wwdc2016/603/)|[Note](2016/603-adopting-metal-part-2.md)
 
 ## 2017
 
 Session | Video | Note
 --|--|--
+
+
+
+https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf

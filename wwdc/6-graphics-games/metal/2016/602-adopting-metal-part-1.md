@@ -2,7 +2,7 @@
 
 # [602 Adopting Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/602/)
 
-2016/602-adopting-metal-part-1.md
+
 
 
 
@@ -37,6 +37,6 @@ fragment half4 fragment_lit_textured(
   texture2d<float, access::sample> tex2d [[texture(0)]],
   sampler sampler2d [[sampler(0)]])
 {
-  
+
 }
 ```
