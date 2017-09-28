@@ -63,52 +63,8 @@ dispatch_semaphore_create(3)
 ```
 
 
-## Metal shading language
+## [Metal shading language](604.2-metal-shading-language.md)
 
 * writing shaders in metal
 * data types in metal
 * shader inputs, outputs, and matching rules.
-
-
-
-### data types
-
-
-### Buffers
-
-a pointer or a reference to a type
-must be declared in an address space
-* global
-* constant - at the same loation ..
-
-pass by reference
-
-#### Global vs Constant
-
-### Per-Vertex Inputs - Option One
-
-
-### Per-Vertex Inputs - Option Two
-
-Decouple vertex input data from type used in shader
-
-### Per-Vertex Outputs - Option One
-
-### Per-Vertex Outputs - Option Two
-
-### Per-Fragment Inputs
-
-### Per-Fragment Outputs
-
-## Shader Signature Matching
-
-Types match
-
-## Math in Shaders
-
-fast vs precise mode
-
-Handling of NaNs is undefined in fast modes
-
-
-### Metal Standard Library

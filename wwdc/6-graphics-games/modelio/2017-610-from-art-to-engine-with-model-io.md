@@ -6,6 +6,8 @@
 
 ## USD Universal Scene Description
 
+[Official Link](https://graphics.pixar.com/usd/docs/index.html)
+
 ### Composition
 
 ### Classes, Variations, and Overrides
