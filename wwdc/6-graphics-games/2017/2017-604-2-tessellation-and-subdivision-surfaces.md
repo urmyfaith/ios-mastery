@@ -18,10 +18,43 @@ Control over the amount of detail generated
 
 ### Subdivision Surfaces
 
+
+
 ```swift
+//Subdivision Surfaces
+//Adaptive subdivision on the GPU
+
+// Enable subdivision surfaces
+geometry. subdivisionLevel = = 1
+geometry.wantsAdaptiveSubdivision = true
+
+// Enable tessellation
+let tessellator = SCNGeometryTessellator()
+geometry.tessellator = tessellator
+```
+
+### Subdivision Surfaces
+
+Faster skinning and morphing
+
+Only the coarse mesh is animated
+Leverages the GPU for morphing, skinning and refinement
+
+
+```swift
+//Subdivision Surfaces
+//Asset authoring
+// Preserve topology when importing from files
+let scene = try! SCNScene(url: url, options: [.preserveOriginalTopology: true])
+// Use quads when creating geometries programmatically
+
 let scene = try! SCNScene()
 
+let element = SCNGeometryElement(data: elementData, primitiveType: .polygon,
+primitiveCount: 1,
+bytesPerIndex: MemoryLayout<UInt8>.size)
 
 ```
+
 
 ### Demo
