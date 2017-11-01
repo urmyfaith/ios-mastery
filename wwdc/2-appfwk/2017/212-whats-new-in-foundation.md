@@ -3,16 +3,38 @@
 # [212 What's New in Foundation](https://developer.apple.com/videos/play/wwdc2017/212/)
 
 
+* New API Highlights - Tony Parker, Foundation
+* [Key Paths and Key Value Observation - Michael LeHew, Foundation](212-2-key-paths-and-key-value-observation.md) (5~)
+* [Encoding and Decoding - Tony Parker & Itai Ferber, Foundation](212-3-encoding-and-decoding.md) (23.5~)
 
-## KeyPath
+## New API Highlights - Tony Parker, Foundation
+
+### New Foundation Features
+
+* File provider communication
+* Improved available storage space API
+* Improved NSString ↔ Swift String range conversion
+* Discrete NSProgress support in NSXPCConnection
+* Thermal notifications on iOS
+
+### Foundation Performance Improvements
+
+* Copy-on-write NSArray, NSDictionary, NSSet
+* Data inlining
+* Faster calendrical calculations with lower peak memory
+* Faster bridging of NSNumber to and from Swift
+
+>
+
+## [Key Paths and Key Value Observation - Michael LeHew, Foundation](212-2-key-paths-and-key-value-observation.md) (5~)
 
 
 
-## Encoding and Decoding
+## [Encoding and Decoding - Tony Parker & Itai Ferber, Foundation](212-3-encoding-and-decoding.md) (23.5~)
 
 
 ### Codable Philosophy
 
 * Error handling built-in
 * Encapsulate coding details
-* Abstract format from types 
+* Abstract format from types

@@ -2,9 +2,11 @@
 
 # String
 
-[Apple]()
+[Apple](https://developer.apple.com/documentation/swift/string)
 [SwiftDoc](http://swiftdoc.org/v3.1/type/String/)
 [GitHub]()
+
+## [Substring](https://developer.apple.com/documentation/swift/substring) (since Xcode9, iOS11, 2017)
 
 ## StaticString
 
@@ -21,4 +23,4 @@ UTF32|
 * https://oleb.net/blog/2016/12/emoji-4-0/
 * https://oleb.net/blog/2017/01/fun-with-string-interpolation/
 * https://oleb.net/blog/2017/02/why-is-string-characterview-not-a-mutablecollection/
-* 
+*
