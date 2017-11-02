@@ -22,7 +22,7 @@ enum error|[EncodingError](https://developer.apple.com/documentation/swift/encod
 
 x | Encoding Containers | Decoding Containers
 --|--|--
-| [KeyedEncodingContainer](https://developer.apple.com/documentation/swift/keyedencodingcontainer) | [KeyedDecodingContainer](https://developer.apple.com/documentation/swift/keyeddecodingcontainer)
-| [SingleValueEncodingContainer](https://developer.apple.com/documentation/swift/singlevalueencodingcontainer) |  [SingleValueDecodingContainer](https://developer.apple.com/documentation/swift/singlevaluedecodingcontainer)
-| [KeyedEncodingContainerProtocol](https://developer.apple.com/documentation/swift/keyedencodingcontainerprotocol) | [KeyedDecodingContainerProtocol](https://developer.apple.com/documentation/swift/keyeddecodingcontainerprotocol)
-| [UnkeyedEncodingContainer](https://developer.apple.com/documentation/swift/unkeyedencodingcontainer) | [UnkeyedDecodingContainer](https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer)
+struct | [KeyedEncodingContainer](https://developer.apple.com/documentation/swift/keyedencodingcontainer) | [KeyedDecodingContainer](https://developer.apple.com/documentation/swift/keyeddecodingcontainer)
+protocol | [SingleValueEncodingContainer](https://developer.apple.com/documentation/swift/singlevalueencodingcontainer) |  [SingleValueDecodingContainer](https://developer.apple.com/documentation/swift/singlevaluedecodingcontainer)
+protocol| [KeyedEncodingContainerProtocol](https://developer.apple.com/documentation/swift/keyedencodingcontainerprotocol) | [KeyedDecodingContainerProtocol](https://developer.apple.com/documentation/swift/keyeddecodingcontainerprotocol)
+protocol| [UnkeyedEncodingContainer](https://developer.apple.com/documentation/swift/unkeyedencodingcontainer) | [UnkeyedDecodingContainer](https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer)

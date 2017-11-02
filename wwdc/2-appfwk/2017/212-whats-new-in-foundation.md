@@ -4,7 +4,7 @@
 
 
 * New API Highlights - Tony Parker, Foundation
-* [Key Paths and Key Value Observation - Michael LeHew, Foundation](212-2-key-paths-and-key-value-observation.md) (5~)
+* [Key Paths and Key Value Observation - Michael LeHew, Foundation](212-2-key-paths-and-key-value-observation.md) (5~23.5)
 * [Encoding and Decoding - Tony Parker & Itai Ferber, Foundation](212-3-encoding-and-decoding.md) (23.5~)
 
 ## New API Highlights - Tony Parker, Foundation
