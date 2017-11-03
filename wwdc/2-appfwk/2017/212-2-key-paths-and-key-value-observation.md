@@ -14,11 +14,13 @@
 * [SE-0161 Smart KeyPaths: Better Key-Value Coding for Swift](https://github.com/apple/swift-evolution/blob/master/proposals/0161-key-paths.md)
 
 
+#### Creating Key Paths
+
 `\Kid.nickname`
 
 Backslash , Dot, Base Type, PropertyName
 
-\\Data.[.startIndex] \\.[.startIndex
+`\Data.[.startIndex] \.[.startIndex]`
 
 
 ### Uniform Syntax
@@ -27,7 +29,7 @@ Types | Properties/Subscripts
 --|--
 struct | let/var
 class | get/set
-\@objc class | stored and computed
+`@objc class` | stored and computed
 
 ### Using Key Paths
 
@@ -43,17 +45,17 @@ class | get/set
 
 #### Type Eresed Key paths
 
-let partyPaths = [\BirthdayParty.theme, \BirthdayParty.attending, \BirthdayParty.celebrant]
+`let partyPaths = [\BirthdayParty.theme, BirthdayParty.attending, \BirthdayParty.celebrant]`
 
 
 
 ### API
 
-* [AnyKeyPath](https://developer.apple.com/documentation/swift/anykeypath)
-* [PartialKeyPath](https://developer.apple.com/documentation/swift/partialkeypath)
-* [KeyPath](https://developer.apple.com/documentation/swift/keypath)
-* [WritableKeyPath](https://developer.apple.com/documentation/swift/writablekeypath)
-* [ReferenceWritableKeyPath](https://developer.apple.com/documentation/swift/referencewritablekeypath)
+* [`AnyKeyPath`](https://developer.apple.com/documentation/swift/anykeypath)
+* [`PartialKeyPath<Root>`](https://developer.apple.com/documentation/swift/partialkeypath)
+* [`KeyPath<Root, Value>`](https://developer.apple.com/documentation/swift/keypath)
+* [`WritableKeyPath<Root, Value>`](https://developer.apple.com/documentation/swift/writablekeypath)
+* [`ReferenceWritableKeyPath<Root, Value>`](https://developer.apple.com/documentation/swift/referencewritablekeypath)
 
 
 WritableKeyPath - Write directly into value-type base (inout/mutating)
@@ -69,8 +71,10 @@ ReferenceWritableKeyPath - Write into a reference-type base
 observation - 2 functions. avoid void* context ; manage life cycle.
 
 
-`let observation = mia.observe(\.age) {
+```swift
+let observation = mia.observe(\.age) {
   observed : Kid, change : NSKeyValueObservedChange<Double> in
 
 
-}`
+}
+```
