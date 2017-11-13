@@ -14,7 +14,7 @@ ACMSReport | | | Not standalone entity
 
 ### Views
 
-Dashboard
+Dashboard = caution summary + precaution summary + fleets summary (stats by fleets)
 
 ## API
 
@@ -36,8 +36,9 @@ For entity api
 For view api
 
 
+### URL
 
-URL |
+URL | Notes
 --|--
 fleets.json?includes=aircraft | by default (if no includes parameter) aircrafts associated with the type is not included. , also what properties/attributes to be returned selectively.
 aircrafttypes/{$hashcode}| return specific aircraft type with details.
