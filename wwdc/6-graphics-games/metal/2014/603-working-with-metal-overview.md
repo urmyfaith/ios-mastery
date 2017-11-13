@@ -84,7 +84,7 @@ Can share texture storage with other textures
 ## Render Command Encoder
 
 
-## Shading Language
+## Shading Language 33~
 
 Based on C++11
 
@@ -95,4 +95,11 @@ Data types for graphics
 
 "Attributes"
 * Function arguments
-* Sampling 
+* Sampling
+
+#### Argument Tables
+
+code to table , in diagram
+
+
+## Developer tools 36~
