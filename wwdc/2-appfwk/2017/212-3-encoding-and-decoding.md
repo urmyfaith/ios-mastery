@@ -1,8 +1,39 @@
 # [Encoding and Decoding - Tony Parker & Itai Ferber, Foundation](212-3-encoding-and-decoding.m) (23.5~)
 
+```swift
+let jsonData = """
+{
+  "name": "Monalisa Octocat",
+  "email": "support@github.com",
+  "date": "2011-04-14T16:00:49Z"
+}
+""".data(using: .utf8)!
+struct Author : Codable {
+    let name: String
+    let email: String
+    let date: Date
+}
+let decoder = JSONDecoder()
+decoder.dateDecodingStrategy = .iso8601
+let author = try decoder.decode(Author.self, from: jsonData)
+
+author.name
+author.date
 
 
-### Demo 30.5
+
+```
+
+
+#### customize name
+
+enum CodingKeys : string, CodingKey
+
+case commitX = "commit_x"
+
+
+
+### Demo - Itai Ferber, Foundation 30.5
 
 
 
