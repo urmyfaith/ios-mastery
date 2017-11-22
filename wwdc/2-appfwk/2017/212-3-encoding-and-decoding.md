@@ -122,9 +122,9 @@ class Dog : Animal {
 
 ### Abstract format from types
 
-Date
+Date -- see [`JSONEncoder.DateEncodingStrategy`](https://developer.apple.com/documentation/foundation/jsonencoder.dateencodingstrategy)
 
-Data
+Data -- [`JSONEncoder.DataEncodingStrategy`](https://developer.apple.com/documentation/foundation/jsonencoder.dataencodingstrategy)
 
 Property Lists
 
@@ -134,6 +134,8 @@ Property Lists
 
 
 ## Ref: [Encoding, Decoding, and Serialization](https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization)
+
+Note: Most these conceptual API are in [Swift: ](https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization), while JSON and PropertyList are in [Foundation: ](https://developer.apple.com/documentation/foundation/archives_and_serialization)
 
 
 [CodingKey](https://developer.apple.com/documentation/swift/codingkey)
@@ -158,3 +160,6 @@ x | JSON | PropertyList
 Encoder | [JSONEncoder](https://developer.apple.com/documentation/foundation/jsonencoder)| [PropertyListEncoder](https://developer.apple.com/documentation/foundation/propertylistencoder)
 Decoder | [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)| [PropertyListDecoder](https://developer.apple.com/documentation/foundation/propertylistdecoder)
 PropertyListSerialization| [JSONSerialization](https://developer.apple.com/documentation/foundation/jsonserialization) iOS 5| [PropertyListSerialization](https://developer.apple.com/documentation/foundation/propertylistserialization) iOS 2
+
+
+* [Encoding and Decoding Custom Types](https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types)
