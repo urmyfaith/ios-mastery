@@ -24,21 +24,116 @@ author.date
 
 ```
 
+???? Can use class instead of struct??
 
 #### customize name
 
-enum CodingKeys : string, CodingKey
+```swift
+private enum CodingKeys : String, CodingKey {
 
-case commitX = "commit_x"
-
-
-
-### Demo - Itai Ferber, Foundation 30.5
-
+  case commentCount = "comment_count"
+}
+```
 
 
+## Demo - Itai Ferber, Foundation 30.5
 
-### Ref: [Encoding, Decoding, and Serialization](https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization)
+GitHubCommit
+
+
+#### `let sha: string`
+
+add it in CodingKeys { case sha }
+
+#### `let url : URL` ; `{case url = "XXXX"}` -
+
+DecodingError
+
+let url : URL? // if even wrong "XXXX" keyNotFound
+
+#### valueNotFound / typeMismatch
+
+## Slide , Tony 38:40
+
+Codable Philosophy
+
+* Error handling built-in
+* Encapsulate encoding details
+* Abstract format from types
+
+### Error handling
+
+* Encoding
+  * Invalid Value
+* Decoding
+  * keyNotFound
+  * valueNotFound
+  * typeMismatch
+  * dataCorrupted
+
+#### Beyond Basic Error Handling
+
+* Bytes
+* Structured bytes
+* Typed data
+* Domain-specific validation
+* Graph ?? validation
+
+Writing `init(from decoder)...` - for example required url is https
+
+### Encapsulate encoding details
+
+Keyed Containers
+
+Strongly-typed replacements for String keys
+
+Unkeyed Container
+
+Single Value Containers
+
+#### `func encode(to encoder : Encoder) throws`
+
+Nested Containers 49?
+
+classes......
+
+```swift
+class Animal : Decodable {
+  var legCount: Int
+  private enum CodingKeys: String, CodingKey { case legCount }
+  required init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    legCount = try container.decode(Int.self, forKey: .legCount)
+  }
+}
+
+class Dog : Animal {
+  var bestFriend: Kid
+  private enum CodingKeys : String, CodingKey { case bestFriend }
+  required init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    bestFriend = try container.decode(Kid.self, forKey: .bestFriend)
+    let superDecoder = try container.superDecoder()
+    try super.init(from : superDecoder)
+  }
+}
+
+```
+
+### Abstract format from types
+
+Date
+
+Data
+
+Property Lists
+
+
+#### Codable Foundation Types
+
+
+
+## Ref: [Encoding, Decoding, and Serialization](https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization)
 
 
 [CodingKey](https://developer.apple.com/documentation/swift/codingkey)
@@ -57,3 +152,9 @@ struct | [KeyedEncodingContainer](https://developer.apple.com/documentation/swif
 protocol | [SingleValueEncodingContainer](https://developer.apple.com/documentation/swift/singlevalueencodingcontainer) |  [SingleValueDecodingContainer](https://developer.apple.com/documentation/swift/singlevaluedecodingcontainer)
 protocol| [KeyedEncodingContainerProtocol](https://developer.apple.com/documentation/swift/keyedencodingcontainerprotocol) | [KeyedDecodingContainerProtocol](https://developer.apple.com/documentation/swift/keyeddecodingcontainerprotocol)
 protocol| [UnkeyedEncodingContainer](https://developer.apple.com/documentation/swift/unkeyedencodingcontainer) | [UnkeyedDecodingContainer](https://developer.apple.com/documentation/swift/unkeyeddecodingcontainer)
+
+x | JSON | PropertyList
+--|--|--
+Encoder | [JSONEncoder](https://developer.apple.com/documentation/foundation/jsonencoder)| [PropertyListEncoder](https://developer.apple.com/documentation/foundation/propertylistencoder)
+Decoder | [JSONDecoder](https://developer.apple.com/documentation/foundation/jsondecoder)| [PropertyListDecoder](https://developer.apple.com/documentation/foundation/propertylistdecoder)
+PropertyListSerialization| [JSONSerialization](https://developer.apple.com/documentation/foundation/jsonserialization) iOS 5| [PropertyListSerialization](https://developer.apple.com/documentation/foundation/propertylistserialization) iOS 2
