@@ -133,7 +133,7 @@ preferredPresentationSize property Use to target drop animation
 
 ## Summary
 
-NSItemProvider
-Multiple representations Asynchronous Progress, cancellable
-NSItemProviderReading and Writing Visibility and Team Data
-File Provider, Open in Place
+* NSItemProvider
+* Multiple representations Asynchronous Progress, cancellable
+* NSItemProviderReading and Writing Visibility and Team Data
+* File Provider, Open in Place
