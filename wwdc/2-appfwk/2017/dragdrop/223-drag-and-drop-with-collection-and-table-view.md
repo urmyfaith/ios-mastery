@@ -91,6 +91,7 @@ Drop coordinator
 ## API
 
 x | [Table View](https://developer.apple.com/documentation/uikit/views_and_controls/table_views) | [Collection Views](https://developer.apple.com/documentation/uikit/views_and_controls/collection_views)
+--|--|--
 guide | [Supporting Drag and Drop in Table Views](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/supporting_drag_and_drop_in_table_views)
 x | [`UITableViewDragDelegate`](https://developer.apple.com/documentation/uikit/uitableviewdragdelegate) | [`UICollectionViewDragDelegate`](https://developer.apple.com/documentation/uikit/uicollectionviewdragdelegate)
 x | [`UITableViewDropDelegate`](https://developer.apple.com/documentation/uikit/uitableviewdropdelegate) | [`UICollectionViewDropDelegate`](https://developer.apple.com/documentation/uikit/uicollectionviewdropdelegate)
