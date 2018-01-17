@@ -24,18 +24,3 @@ var confidence: VNConfidence { get }
 typealias VNConfidence = Float
 
 var uuid: UUID { get }
-
-## [`VNClassificationObservation`](https://developer.apple.com/documentation/vision/vnclassificationobservation)
-
-var identifier: String { get }
-
-## [`VNTextObservation`](https://developer.apple.com/documentation/vision/vntextobservation)
-
-    var characterBoxes: [VNRectangleObservation]?
-
-
-## [`VNHorizonObservation`](https://developer.apple.com/documentation/vision/vnhorizonobservation)
-
-    var angle: CGFloat
-
-    var transform: CGAffineTransform
