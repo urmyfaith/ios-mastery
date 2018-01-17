@@ -16,6 +16,15 @@
       * [`VNImageTranslationAlignmentObservation`](https://developer.apple.com/documentation/vision/vnimagetranslationalignmentobservation)
     * [`VNHorizonObservation`](https://developer.apple.com/documentation/vision/vnhorizonobservation)
 
+
+## [`VNObservation`](https://developer.apple.com/documentation/vision/vnobservation)
+
+var confidence: VNConfidence { get }
+
+typealias VNConfidence = Float
+
+var uuid: UUID { get }
+
 ## [`VNClassificationObservation`](https://developer.apple.com/documentation/vision/vnclassificationobservation)
 
 var identifier: String { get }
