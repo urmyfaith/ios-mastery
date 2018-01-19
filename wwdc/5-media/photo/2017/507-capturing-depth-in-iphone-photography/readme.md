@@ -1,6 +1,8 @@
 # [2017 507 Capturing Depth in iPhone Photography](https://developer.apple.com/videos/play/wwdc2017/507)
 
 
+by Brad Ford, Purveyor of Deep Thoughts
+
 507-capturing-depth-in-iphone-photography.md
 
 
