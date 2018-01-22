@@ -1,60 +1,74 @@
 
-# [Image Editing with Depth](https://developer.apple.com/videos/play/wwdc2017/508/)
+# [2017 508 Image Editing with Depth](https://developer.apple.com/videos/play/wwdc2017/508/)
+
+Etienne Guerard 　Image Editor-in-Chief
+
+No|Topic|PresenterTime
+--|--
+1| What is depth? |Etienne Guerard| 100
+2|Loading depth data | Etienne Guerard| 720
+3|[Filtering with depth data](3-filtering-with-depth-data.md)|Stephen Ward, Alexandre Naaman| 1536
+4|[Saving depth data](4-save-depth-data.md)| Etienne Guerard| 4300
+
+
+## What is depth?
+
+iPhone 7 Plus / iOS 11 / Dual camera system / Disparity
+
+## How
 
 2017-508-image-editing-with-depth.md
 
+## Demo: Depth Explorer - Craig Milito - 240
+
+
+## Effects
+
+Blur background.
+
+
+### Who can use depth ?
+
+Editing app, Camera app, Sharing app.
+
+## Loading depth data | 720
+
+PHContentEditingInput
+
+PHImageManager
+
+
+### Testing for Depth Data with ImageIO
+
+### Reading Depth Data
+
+
+Auxiliary data
+
+AVDepthData
+
+CVPixelBuffer
+
+Single channel Depth or disparity
+
+16-bit or 32-bit float
+
 
 ```swift
-// Code to Sample the Disparity Map with a Tap
-// Apply the filter with the sampleRect from the user’s tap. Don’t forget to clamp!
-let minMaxImage = normalizedDisparityImage.clampingToExtent().applyingFilter( "CIAreaMinMaxRed", withInputParameters: [kCIInputExtentKey : CIVector(cgRect:sampleRect)])
+// Reading depth data from an image source import ImageIO
+let fileURL: URL
 
-// A four-byte buffer to store a single pixel value
-var pixel = [UInt8](repeating: 0, count: 4)
-// Render the image to a 1x1 rect. Be sure to use a nil color space.
-context.render(minMaxImage, toBitmap: &pixel, rowBytes: 4,
-bounds: CGRect(x:0, y:0, width:1, height:1), format: kCIFormatRGBA8, colorSpace: nil)
-// The max is stored in the green channel. Min is in the red.
-let disparity = Float(pixel[1]) / 255.0
-```
-Using Disparity as a Mask
+let source =  CGImageSourceCreateWithURL   (fileURL,  nil )
 
+// Read auxiliary data of type disparity
+let auxDataType = kCGImageAuxiliaryDataTypeDisparity
+let auxDataInfo = CGImageSourceCopyAuxiliaryDataInfoAtIndex(source, 0, auxDataType)
 
-## Custom Depth Effect - Into Darkness
-
-Raising Disparity to a Power
-
-```swift
-
-// CIColorKernel to dim the image background with disparity
-kernel vec4 into_darkness(__sample imageColor, __sample normalizedDisparity, float power) {
-// Adjust the fall-off intensity with the power slider
-float scaleFactor = pow(normalizedDisparity.r, power);
-// Scale the original color by the computed intensity
-vec4 result = vec4(imageColor.rgb * scaleFactor, imageColor.a);
-return result;
+ if
 }
 ```
 
-Swift Code
 
-```swift
+## 3 [Filtering with depth data](3-filtering-with-depth-data.md) - 1536
 
-// How to apply the color kernel to your image in Swift
-let outputImage = kernel.apply(withExtent: image.extent,
-arguments: [image, normalizedDisparity, power])
-
-```
-
-
-### [Using CIDepthBlurEffect - Alexandre Naaman, Technical Lead, Core Image](cidepthblureffect.md)
-
-
-### [Dolly Zoom](dolly-zoom.md)
-
-
-## Transforming Depth Data
-Orientation
-Crop
-Transform
-Native resolution No color matching
+## 4 [Saving depth data](4-save-depth-data.md) - 4300

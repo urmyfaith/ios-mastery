@@ -21,8 +21,13 @@ if let imageURL = info[UIImagePickerControllerImageURL] as? URL {
 ```swift
 var imageExportPreset: UIImagePickerControllerImportExportPreset { get set }
 
-let imagePicker = UIImagePickerController() imagePicker.imageExportPreset = .compatible self.present(imagePicker, animated: true, completion: nil)
-let imagePicker = UIImagePickerController() imagePicker.imageExportPreset = .current self.present(imagePicker, animated: true, completion: nil)
+let imagePicker = UIImagePickerController()
+imagePicker.imageExportPreset = .compatible
+self.present(imagePicker, animated: true, completion: nil)
+
+let imagePicker = UIImagePickerController() 
+imagePicker.imageExportPreset = .current
+self.present(imagePicker, animated: true, completion: nil)
 ```
 
 
@@ -33,15 +38,22 @@ var videoExportPreset: String { get set }
 
 import AVFoundation
 
-let imagePicker = UIImagePickerController() imagePicker.videoExportPreset = AVAssetExportPresetHighestQuality self.present(imagePicker, animated: true, completion: nil)
+let imagePicker = UIImagePickerController()
+imagePicker.videoExportPreset = AVAssetExportPresetHighestQuality
+self.present(imagePicker, animated: true, completion: nil)
 // See AVAssetExportSession
 ```
 
 ### Saving Photos and Videos
 
 ```swift
-public func UIImageWriteToSavedPhotosAlbum(_ image: UIImage, _ completionTarget: Any?, _ completionSelector: Selector?, _ contextInfo: UnsafeMutableRawPointer?)
-public func UISaveVideoAtPathToSavedPhotosAlbum(_ videoPath: String, _ completionTarget: Any?, _ completionSelector: Selector?, _ contextInfo: UnsafeMutableRawPointer?)
+public func UIImageWriteToSavedPhotosAlbum(_ image: UIImage,
+  _ completionTarget: Any?, _ completionSelector: Selector?,
+  _ contextInfo: UnsafeMutableRawPointer?)
+
+public func UISaveVideoAtPathToSavedPhotosAlbum(_ videoPath: String,
+  _ completionTarget: Any?, _ completionSelector: Selector?,
+  _ contextInfo: UnsafeMutableRawPointer?)
 ```
 
 
