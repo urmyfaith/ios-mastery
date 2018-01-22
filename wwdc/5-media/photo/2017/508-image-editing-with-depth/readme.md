@@ -3,7 +3,7 @@
 
 Etienne Guerard 　Image Editor-in-Chief
 
-No|Topic|PresenterTime
+No|Topic|Presenter|Time
 --|--|--|--
 1| What is depth? |Etienne Guerard| 100
 2|Loading depth data | Etienne Guerard| 720
