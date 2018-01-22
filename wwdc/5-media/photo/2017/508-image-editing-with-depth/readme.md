@@ -4,7 +4,7 @@
 Etienne Guerard 　Image Editor-in-Chief
 
 No|Topic|PresenterTime
---|--
+--|--|--|--
 1| What is depth? |Etienne Guerard| 100
 2|Loading depth data | Etienne Guerard| 720
 3|[Filtering with depth data](3-filtering-with-depth-data.md)|Stephen Ward, Alexandre Naaman| 1536

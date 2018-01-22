@@ -1,12 +1,16 @@
 
-• Simple Background Effects
-• Custom Depth Effect
-• Depth Blur Effect
-• 3D Effect
+## [Filtering with depth data](3-filtering-with-depth-data.md)| - Stephen Ward, Alexandre Naaman - 1536
+
+Topic | Presenter | Time
+--|--|--
+* Simple Background Effects |
+* Custom Depth Effect |
+* Depth Blur Effect |
+* 3D Effect|
+
 
 
 Stephen Ward,
-
 
 
 ```swift
