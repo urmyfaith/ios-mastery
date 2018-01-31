@@ -5,7 +5,7 @@
 https://devstreaming-cdn.apple.com/videos/wwdc/2017/505e36yrkhhfv/505/505_whats_new_in_photos_apis.pdf
 
 
-*
+* Eric Hanson, Photos Platform Evangelist
 * Hasan Adil, Photos Engineer
 * Andreas Karlsson, Photos Engineer
 
