@@ -4,7 +4,7 @@
 
 
 No | Topic | Presenter | Time|Page
---|--|--|--
+--|--|--|--|--
 1|What Can Vision Do|
 2|Vision Concepts| Frank Doepke | 815
 3|The Code|
