@@ -1,11 +1,10 @@
 
 # [Core ML](https://developer.apple.com/documentation/coreml)
 
-Year-iOS| Session | Note
+Year/iOS| Session | Note
 --|--|--
 2017/11|[2017 703 Introducing Core ML](https://developer.apple.com/videos/play/wwdc2017/703/)| [Note](2017-703-introducing-core-ml)
-2017/11|[2017 710 Core ML in depth](https://developer.apple.com/videos/play/wwdc2017/710/)|
-[Note](2017-710-core-ml-in-depth)
+2017/11|[2017 710 Core ML in depth](https://developer.apple.com/videos/play/wwdc2017/710/)|[Note](2017-710-core-ml-in-depth)
 
 
 ## [API](https://developer.apple.com/documentation/coreml/core_ml_api)

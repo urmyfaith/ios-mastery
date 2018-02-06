@@ -45,6 +45,7 @@ var regionOfInterest: CGRect { get set }
 
 ## [`VNTargetedImageRequest`](https://developer.apple.com/documentation/vision/vntargetedimagerequest)
 
+5 (data type) * 2 (orientation yes/ no) * 2 (completionHandler yes/no)
 
 init(targetedCGImage: CGImage, options: [VNImageOption : Any] = [:])
 

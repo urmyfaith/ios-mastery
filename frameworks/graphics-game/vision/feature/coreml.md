@@ -30,3 +30,10 @@ scaleFill | 2
 ## [`VNClassificationObservation`](https://developer.apple.com/documentation/vision/vnclassificationobservation)
 
 var identifier: String { get }
+
+## Externals References.
+
+###  [Part 2 – TextDetection as source for OCR](http://www.neurosurg.de/2017/10/17/part-2-textdetection-as-source-for-ocr/)
+
+
+[DrNeuroSurg/OCRwithVisionAndCoreML-Part2](https://github.com/DrNeuroSurg/OCRwithVisionAndCoreML-Part2)

@@ -28,3 +28,9 @@ typealias VNDegrees = Float
 
 
 var bottomLeft: CGPoint { get }
+
+var bottomRight: CGPoint { get }
+
+var topLeft: CGPoint { get }
+
+var topRight: CGPoint { get }
