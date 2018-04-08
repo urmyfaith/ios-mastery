@@ -1,7 +1,9 @@
 
-## [Camera (~18:45)](2017-604-1-camera-enhancements.md)
+## [Camera (Effect)](2017-604-1-camera-enhancements.md)
 
 ### Demo - [Fox 2](https://developer.apple.com/sample-code/wwdc/2017/Fox2.zip)
+
+[`SCNCamera`](https://developer.apple.com/documentation/scenekit/scncamera)
 
 follow character smoothly.
 
@@ -9,34 +11,46 @@ follow character smoothly.
 
 //Physically Based Camera
 
- // configure field of view...
-  camera.fieldOfView = 60.0 //degrees
+// configure field of view...
+camera.fieldOfView = 60.0 //degrees
 
 // ...or focal
 camera.focalLength = 50.0  //mm
 camera.sensorHeight = 24.0 //mm
 
-
 ```
 
 configure the depth of field
 
-
 ```swift
-camera.wantsDepthOfField = true camera.focusDistance = 0.8 //meters
+camera.wantsDepthOfField = true
+camera.focusDistance = 0.8 //meters
 camera.fStop = 5.6
 ```
+
+#### Bokeh
+
+Automatic bokeh / Works best with HDR camera
+
+```swift
 // configure the camera for HDR
 camera.wantsHDR = true
 
 // configure the depth of field
 camera.apertureBladeCount = 5
+```
 
+#### Motion Blur
+```swift
 // Activate Motion Blur
 camera.motionBlurIntensity = 1.0
+```
 
+#### Object Motion Blur
 
-###  Ambient Occlusion
+###  Ambient Occlusion [8]
+
+Principle
 
 ```swift
 // Activate SSAO
@@ -49,27 +63,23 @@ camera.screenSpaceAmbientOcclusionDepthThreshold = 0.2 //scene units
 camera.screenSpaceAmbientOcclusionNormalThreshold = 0.3
 ```
 
-### Demo x3
+### Demo 1 - Anatole Duprat [9]
+
+* camera 1
+  * focus distance , smaller - key is near camera.
+  * fstop , small number - strong blur
+  * illuminance of particle.
+* camera 2 - far focus
+  * .
+* camera 3
+  * adjust fstop and focus
+
+### Demo 2 - Motion Blur [10:30]
+
+### Demo 3 - SSAO  
+
+* intensity :
+* radius :
 
 
-## Camera Control
-
-```swift
-// turn on camera control
-scnView.allowsCameraControl = true
-// configure the camera control behaviour
-scnView.defaultCameraController.interactionMode = .orbitTurntable scnView.defaultCameraController.inertiaEnabled = true scnView.defaultCameraController.maximumVerticalAngle = 45 //degrees
-```
-
-
-[`SCNCameraController`](SCNCameraController)
-
-[`SCNCameraControllerDelegate`](https://developer.apple.com/documentation/scenekit/scncameracontrollerdelegate)
-
-
-[`SCNCameraControlConfiguration`](https://developer.apple.com/documentation/scenekit/scncameracontrolconfiguration)
-
-
-## Constraints
-
-[API](https://developer.apple.com/documentation/scenekit/constraints)
+## Camera Control - Thomas Goossens [12:40]

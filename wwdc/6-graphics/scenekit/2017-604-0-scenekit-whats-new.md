@@ -3,8 +3,9 @@
 
 \# | Topic | Presenter | Period
 -- | -- | -- |--
-1|Camera enhancements||
-2|Tessellation and subdivision surfaces||
+1|Camera enhancements (Effect)|Thomas Goossens<br/>Anatole Duprat|12:40
+1|Camera enhancements (Control)|Thomas Goossens|4:50
+2|Tessellation and subdivision surfaces|Amaury Balliet|18:45)
 3|Animation improvements || 34～
 4|Developer tools|~4245|
 5|Related technologies||4245~
@@ -12,9 +13,9 @@
 -|Summary| | 5235
 
 
-## [Camera (~18:45)](2017-604-1-camera-enhancements.md)
+## [Camera (Effect)](2017-604-1-camera-enhancements.md)
 
-
+## [Camera (Control)](2017-604-1-2-camera-control.md)
 
 ## [Tessellation and Subdivision Surfaces](2017-604-2-tessellation-and-subdivision-surfaces.md)
 
