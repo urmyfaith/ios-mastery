@@ -3,8 +3,8 @@
 
 \# | Topic | Presenter | Period
 -- | -- | -- |--
-1|Camera enhancements (Effect)|Thomas Goossens<br/>Anatole Duprat|12:40
-1|Camera enhancements (Control)|Thomas Goossens|4:50
+1-1|Camera enhancements (Effect)|Thomas Goossens<br/>Anatole Duprat|12:40
+1-2|Camera enhancements (Control)|Thomas Goossens|4:50
 2|Tessellation and subdivision surfaces|Amaury Balliet|18:45)
 3|Animation improvements || 34～
 4|Developer tools|~4245|

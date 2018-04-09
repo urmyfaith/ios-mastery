@@ -4,10 +4,15 @@
 
 * SceneKit in a Nutshell
 * Rendering
-* Advances Demo
-* Behind the Demo
-* Camera Effects ~41:20
-* [Model I/O 41:20~51:30](2016-609-3-modelio.md)
+* Physically Based Rendering
+  * [Physically based Materials](2016-609-2-1-physically-based-materials.md) [13:40~19:55]
+  * [Physically based Lights](2016-609-2-2-physically-based-lights.md) [19:55~25:00]
+  * Advances Demo
+  * Behind the Demo
+* [HDR camera and effects](2016-609-3-hdr-camera-and-effects.md) [36:20~41:20]
+* [Model I/O](2016-609-4-modelio.md) Nick Porcino  [41:20~51:30]
+
+----
 
 
 
@@ -26,24 +31,22 @@ Wide Gamut Content
 
 ## [Physically Based Rendering](2016-609-1-physically-based-rendering.md)
 
+###
 
-##  HDR camera and effects
+Jean-Baptiste Bégué
 
-
-Bloom
-
-motion blur
-
-vignetting
-
-color fringe
-
-color correction
-
-color grading
+Sébastien Métrot
 
 
-## [Model I/O 41:20~51:30](2016-609-3-modelio.md)
+Physically Based Rendering in Practice
+
+Bob the Badger
+
+
+## [HDR camera and effects](2016-609-3-hdr-camera-and-effects.md) Sébastien Métrot [36:20~41:20]
+
+
+## [Model I/O](2016-609-4-modelio.md) Nick Porcino  [41:20~51:30]
 
 ## Summary
 

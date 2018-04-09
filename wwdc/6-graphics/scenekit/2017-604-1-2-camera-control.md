@@ -7,6 +7,7 @@ Previously
 * Directly manipulate the camera position, rotation or transform
 * For debugging use allowsCameraControl API
 
+New in iOS 11
 
 * Introducing SCNCameraController
 * Built-in support for common controls modes
@@ -18,7 +19,9 @@ Previously
 // turn on camera control
 scnView.allowsCameraControl = true
 // configure the camera control behaviour
-scnView.defaultCameraController.interactionMode = .orbitTurntable scnView.defaultCameraController.inertiaEnabled = true scnView.defaultCameraController.maximumVerticalAngle = 45 //degrees
+scnView.defaultCameraController.interactionMode = .orbitTurntable
+scnView.defaultCameraController.inertiaEnabled = true
+scnView.defaultCameraController.maximumVerticalAngle = 45 //degrees
 ```
 
 name| description
