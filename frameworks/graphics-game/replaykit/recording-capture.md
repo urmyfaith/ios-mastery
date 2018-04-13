@@ -7,17 +7,22 @@ recording-capture.md
 * UIViewController
   * [RPPreviewViewController](https://developer.apple.com/documentation/replaykit/rppreviewviewcontroller) : [NSExtensionRequestHandling](https://developer.apple.com/reference/foundation/nsextensionrequesthandling)
 
+---
+
 * NSObjectProtocol
   * protocol [RPPreviewViewControllerDelegate](https://developer.apple.com/documentation/replaykit/rppreviewviewcontrollerdelegate)
 
+---
 
 * NSObject
   * [RPScreenRecorder](https://developer.apple.com/documentation/replaykit/rpscreenrecorder)
 
+---
+
 * NSObjectProtocol
   * protocol [RPScreenRecorderDelegate](https://developer.apple.com/reference/replaykit/rpscreenrecorderdelegate)
 
-## RPScreenRecorder](https://developer.apple.com/documentation/replaykit/rpscreenrecorder)
+## [RPScreenRecorder](https://developer.apple.com/documentation/replaykit/rpscreenrecorder)
 
 class func shared() -> RPScreenRecorder
 
