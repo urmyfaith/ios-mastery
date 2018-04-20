@@ -2,6 +2,9 @@
 
 ## [243 File Provider Enhancements](https://developer.apple.com/videos/play/wwdc2017/243/)
 
+Since iOS 8
+
+Audiences are cloud provider. 
 
 New in iOS 11.0
 

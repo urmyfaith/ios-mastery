@@ -1,6 +1,10 @@
 
-# [229 Building Great Document-based Apps in iOS 11](https://developer.apple.com/videos/play/wwdc2017/229/)
+# [2017 229 Building Great Document-based Apps in iOS 11](https://developer.apple.com/videos/play/wwdc2017/229/)
 
+
+* Pau Sastre Miguel
+* Raffael Hannemann
+* Maxime Uzan
 
 ## New File App
 
@@ -10,65 +14,47 @@ File Provider
 * On my iPad/iPhone
   * Local storage - shows in
 
-###
+### On my iPad/iPhone
+
+* Local storage
+* Shows files inside the application container’s Documents folder
+* Configure the Info.plist in one of the following ways
+  * UISupportsDocumentBrowser
+  * UIFileSharingEnabled + LSSupportsOpeningDocumentsInPlace
 
 ### Tags
 
 ### Recents Popover
 
 
-* Document Browser API
+## TOC
+
+Topic|Presenter|Time|Page
+--|--|--|--
+New File App
+[Document Browser API](229-1-document-browser-api.md)|Pau Sastre Miguel|4?
+[Advanced](229-2-advanced.md) |Pau Sastre Miguel|29?|
+[Thumbnail Extension](229-3-thumbnail-extension.md) | Maxime Uzan |  43:30 |  p115
+Quick-Look Preview Extension | Maxime Uzan  | 51:55 | p160
+Summary ||57:00
+
+## [Document Browser API](229-1-document-browser-api.md) 4:00
+
+## [Advanced](229-2-advanced.md) 29? -  p83
+
+## [Thumbnail Extension](229-3-thumbnail-extension.md) - Maxime Uzan -  43:30 -  p115
 
 
-[`UIDocumentBrowserViewController`](https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller)
-
-UIDocumentPickerViewController
-
-## Advanced
-
-* Open-in-placed
-* custom action
-* opening transition
-
-### Open-in-placed
+## Quick-Look Preview Extension - Maxime Uzan  -  51:55 - p160
 
 
+Providing system-wide Quick Look previews
 
-### Custom Actions
+* System-wide
+  * Applications using Quick Look
+  * Spotlight when peeking on results
+* Full Quick Look experience
+  * Previewed in QLPreviewController
+  * Loading spinner
 
-3 diff ways.
-
-[`UIDocumentBrowserAction`](https://developer.apple.com/documentation/uikit/uidocumentbrowseraction)
-
-
-UIActivityController
-
-### opening transition
-
-UIDocumentBrowserTransitionController
-
-### Demo 2
-
-```swift
-func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-
-    guard url.isFileURL else { return false }
-    guard let dbvc = window?.rootViewController as? UIDocumentBrowserViewController else {
-        return false
-    }
-
-}
-```
-
-
-## Thumbnail Extension
-
-* [`QLFileThumbnailRequest`](https://developer.apple.com/documentation/quicklook/qlfilethumbnailrequest)
-* [`QLThumbnailProvider`](https://developer.apple.com/documentation/quicklook/qlthumbnailprovider)
-* [`QLThumbnailReply`](https://developer.apple.com/documentation/quicklook/qlthumbnailreply)
-
-
-func provideThumbnail(for request: QLFileThumbnailRequest,
-                    _ handler: @escaping (QLThumbnailReply?, Error?) -> Void)
-
-## Quick-Look Preview Extension
+## Summary - 57:00
