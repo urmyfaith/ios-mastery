@@ -2,7 +2,7 @@
 
 ## Request
 
-*
+* [`VNTargetedImageRequest`](https://developer.apple.com/documentation/vision/vntargetedimagerequest)
   * [`VNImageRegistrationRequest`](https://developer.apple.com/documentation/vision/vnimageregistrationrequest)
     * [`VNTranslationalImageRegistrationRequest`](https://developer.apple.com/documentation/vision/vntranslationalimageregistrationrequest)
     * [`VNHomographicImageRegistrationRequest`](https://developer.apple.com/documentation/vision/vnhomographicimageregistrationrequest)

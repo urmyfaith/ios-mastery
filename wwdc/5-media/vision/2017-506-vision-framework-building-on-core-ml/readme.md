@@ -1,16 +1,19 @@
 # [2017 506 Vision Framework: Building on Core ML](https://developer.apple.com/videos/play/wwdc2017/506/)
 
-506-vision-framework-building-on-core-ml.md
+
+* Brett Keating, Apple Manager
+* Frank Doepke, He who wires things together
 
 
 No | Topic | Presenter | Time|Page
 --|--|--|--|--
 1|What Can Vision Do|
 2|Vision Concepts| Frank Doepke | 815
-3|The Code|
-4|[Best Practices](best-practice.md)|
-5|Show And Tell||1930|p77
-
+3|[The Code](the-code.md)|1110|p43
+4|[Best Practices](best-practice.md)|1230|p53
+5|Demo: Show And Tell||1930|p77
+6|Demo: Machine Learning | 2200
+7|Show and Tell - Part Two / MNISTVision | 2510
 
 ## What Can Vision Do
 
@@ -30,16 +33,13 @@ No | Topic | Presenter | Time|Page
 ## Vision Concepts - Frank - 815
 
 
-concept | class
---|--
-The Asks | Request
-The Machinery | Handler
-The Results | Observation
+concept | class | Analyzing an Image| Tracking in a Sequence
+--|--|--|--
+The Asks | Request| DetectBarcodes<br/>DetectFaceLandmarks<br/>DetectFaceRectangles|TrackObject<br/>TrackRectangle<br/>ImageRegistration
+The Machinery | Handler|VNImageRequestHandler |VNSequenceRequestHandler
+The Results | Observation|
 
 
-Analyzing an Image
-
-Tracking in a Sequence
 
 ### Image Request Handler
 
@@ -52,48 +52,7 @@ Tracking in a Sequence
 * For anything that looks at images in a sequence like tracking
 * Does not optimize for multiple requests on an image
 
-## Putting It into Code
-
-
-```swift
-// Create request
-let faceDetectionRequest = VNDetectFaceRectanglesRequest()
-
-// Create request handler
-let myRequestHandler = VNImageRequestHandler(url: fileURL, options: [:])
-
-// send the requests to the request handler
-myRequestHandler.perform([faceDetectionRequest])
-
-// Do we have a face
-for observation in faceDetectionRequest.results as! [VNFaceObservation] {
-
-}
-
-```
-
-### Sequence
-
-```swift
-// Create a sequence request handler
-let requestHandler =  VNSequenceRequestHandler()
-
-
-// Start the tracking with an observation
-let observations = detectionRequest.results as! [VNDetectedObjectObservation]
-let objectsToTrack = observations.map { VNTrackObjectRequest(detectedObjectObservation: $0) }
-
-// Run the requests
-requestHandler.perform(objectsToTrack, on: pixelBuffer)
-
-// Lets look at the results
-for request in objectsToTrack {
-  for observation in request.results as! [VNDetectedObjectObservation] {
-
-  }
-}
-
-```
+## [Putting It into Code](the-code.md)
 
 ## [Best Practices](best-practice.md)
 
@@ -107,9 +66,21 @@ AVCapture + Rectangle.
 ## Show and Tell - Part Two - 2510
 
 
-### MNISTVision
+### MNISTVision 2510
 
 Concepts to be covered
 * Spin off requests from other requests
 * Use Core Image for processing
 * Use Core ML for machine learning
+
+### The Flow Chart
+
+Step|What to do
+--|--
+1|Find sticky note using Rectangle Detector
+2|Use CI for perspective correction and image processing
+3|Run MNIST classifier on resulting CIImage
+
+
+
+## Show and Tell - Part Two - 2510
