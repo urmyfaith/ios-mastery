@@ -1,5 +1,4 @@
-
-## [New CIRenderDestination API](CIRenderDestination.md) 1905
+## [New CIRenderDestination API](CIRenderDestination.md) | Tony | 1905
 
 A consistent API to render to different destination types
 * IOSurface
@@ -8,6 +7,17 @@ A consistent API to render to different destination types
 * OpenGL Texture
 * Memory buffer
 
+Returns immediately if render fails—with an error
+
+* Allow setting of common properties for the destination
+ * Alpha mode behavior
+ * Clamping mode behavior
+ * Destination colorspace
+* And some advanced properties
+  * Dithering
+  * Blending
+
+Reduces the need for multiple CIContexts
 
 ### Performance Benefits
 
@@ -23,8 +33,10 @@ A consistent API to render to different destination types
 
 ```swift
 // Clear Then Render Foreground Blended with Background
-func renderImagePair (foregroundImage : CIImage, backgroundImage : CIImage, blend : CIBlendKernel = CIBlendKernel.sourceOver
-toSurface : IOSurface)
+func renderImagePair (foregroundImage : CIImage,
+  backgroundImage : CIImage,
+  blend : CIBlendKernel = CIBlendKernel.sourceOver
+  toSurface : IOSurface)
 {
   let dest = CIRenderDestination(ioSurface: toSurface)
   let ctx = getContext() // don’t create a context each time
@@ -40,17 +52,26 @@ toSurface : IOSurface)
 ```swift
 let ctx = getContext() // don’t create a context each time
 let texture = currentDrawable.texture
-let dest = CIRenderDestination(texture, commandBuffer: cmdBuffer) try? ctx.startTask(toRender: image, to: dest)
+let dest = CIRenderDestination(texture, commandBuffer: cmdBuffer)
+try? ctx.startTask(toRender: image, to: dest)
 ```
+### Diagram (Problem)
 
+### Rendering to Metal Drawable Textures Improved
 
 ```swift
 let ctx = getContext() // don’t create a context each time
+
 while stillDrawing {
-let dest = CIRenderDestination(
-width: 1024,
-height: 768,
-pixelFormat: MTLPixelFormat.rgba8Unorm, commandBuffer: cmdBuffer) { () -> MTLTexture in
-return currentDrawable.texture })
-try? ctx.startTask(toRender: image, to: dest) }
+  let dest = CIRenderDestination(
+    width: 1024, height: 768,
+    pixelFormat: MTLPixelFormat.rgba8Unorm,
+    commandBuffer: cmdBuffer) { () -> MTLTexture in
+      return currentDrawable.texture
+    }
+  )
+  try? ctx.startTask(toRender: image, to: dest)
+}
 ```
+
+### Diagram (Improved)

@@ -1,39 +1,31 @@
 ## Barcode - David - 3530
 
 
+Framework Barcode Support
+
+Several frameworks support various barcodes types
+
+
 ### CIBarcodeDescriptor Objects Contain
 
-The errorCorrectedPayload of the barcode
-
-Additional code-specific properties such as
-
-Aztec’s layerCount
-
-QRCode’s maskPattern
+* The errorCorrectedPayload of the barcode
+* Additional code-specific properties such as
+  * Aztec’s layerCount
+  * QRCode’s maskPattern
 
 ```swift
 // Get a CIBarcodeDescriptor from AVFoundation.framework
 class MyMetadataOutputObjectsDelegate: NSObject, AVCaptureMetadataOutputObjectsDelegate {
 
-func metadataOutput(_ output:
-didOutput metadataObjects: [
-,
-],
-) {
-if let
-from connection:
-mrc = metadataObjects. ?
-descriptor = mrc. { (descriptor)
-,
+func metadataOutput(_ output: AVCaptureMetadataOutput,
+  metadataObjects: [AVMetadataObject],
+  from connection: AVCaptureConnection) {
 
-AVCaptureMetadataOutput
-AVCaptureConnection
-AVMetadataObject
-first
-as
-AVMetadataMachineReadableCodeObject
-descriptor
-} }
+    if let mrc = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
+      let descriptor = mrc.descriptor {
+        print(descriptor)
+    }
+}
 }
 ```
 

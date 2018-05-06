@@ -11,8 +11,8 @@ No|Topic|Presenter|Time|Page
 3|[New CIRenderDestination API](CIRenderDestination.md) |Tony|1905|p83
 4|Look Inside|David|2700
 5|CIBarcodeDescriptor|David|3515
-6|Vision + Demo|David, Skye|3940
-
+6|[Using Core Image with Vision](6-using-core-image-with-vision.md) | David, Sky | 3930 | p177
+|Summary|4824
 
 ## Summary of What’s New
 
@@ -30,36 +30,7 @@ Our goal for this release is to enable developers to get better:
   * Depth Support
 
 
-## New Built-In CIFilters
-
-### 196
-
-
-### New Built-In CIFilters - Some that are useful for Depth filtering
-
-* CIDepthToDisparity / CIDisparityToDepth
-* CIMorphologyMinimum / Maximum / Gradient
-* CIColorCubesMixedWithMask
-* CIAreaMinMaxRed
-* CIDepthBlurEffect
-
-### New Built-in CIFilters - Some that are often requested additions
-
-* CITextImageGenerator
-* CIColorCurves
-* CILabDeltaE
-* CIBicubicScaleTransform
-* CIBarcodeGenerator
-
-### New Built-in CIFilters - Some that are improved
-
-* CIHueBlendMode
-* CISaturationBlendMode
-* CIColorBlendMode
-* CILuminosityBlendMode
-* CILinearBurnBlendMode
-
-The demosaic and noise reduction filters used for RAW files
+## [New Built-In CIFilters](1-new-builtin-cifilters.md)
 
 
 
@@ -68,4 +39,8 @@ The demosaic and noise reduction filters used for RAW files
 ## [New CIRenderDestination API](CIRenderDestination.md) 1905
 
 
-## [Vision](vision--david--3940.md) - David -  3940
+
+## [Using Core Image with Vision](6-using-core-image-with-vision.md) | David, Sky | 3930 | p177
+
+
+## Summary | David | 4824

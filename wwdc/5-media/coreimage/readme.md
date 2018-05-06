@@ -19,7 +19,7 @@ Year/iOS|Feature|# of Filter
 --|--|--
 2017/11||
 2016/10|   |
-2015/9|[510 What's New in Core Image](https://developer.apple.com/videos/play/wwdc2015/510/)| 
+2015/9|[510 What's New in Core Image](https://developer.apple.com/videos/play/wwdc2015/510/)|
 2014/8|[2014 514 Advances in Core Image](https://developer.apple.com/videos/play/wwdc2014/514/)|[Note](2014-514-advances-in-core-image)
 2014/8|[2014 515 Developing Core Image Filters for iOS](https://developer.apple.com/videos/play/wwdc2014/515)|[Note](2014-515-developing-core-image-filters-for-ios)
 2013/7| |
