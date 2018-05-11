@@ -12,8 +12,12 @@ Previously, kernels are written in CIKernel Language
 
 ### Compiling CIKernels on First Render
 
+* Translate CIKernels
+* Compile CIKernels to Intermediate Representation
+* Concatenate CIKernels
+* Compile to GPU Code
 
-### Writing CIKernels in Metal (New)
+### Writing CIKernels in Metal (New) | p39
 
 Now, you can write CIKernels directly in Metal Shading Language
 
@@ -29,7 +33,7 @@ Supported on iOS (for A8 or newer devices), macOS, and tvOS
 
 Compiling
 
-## How to Create Metal CIKernels |
+## How to Create Metal CIKernels | 1100 | p46
 
 ### Steps
 
@@ -43,6 +47,23 @@ Compiling
 
 ### 2. Compile and link Metal shader file
 
+File | extension | source/program
+--|--|--
+CIKernel Source File| .metal |
+Intermediate Representation File|.air | metal -fcikernel
+Metal Library Data File|.metallib | metalib -cikernel
+
+#### Xcode | 1700
+
+Target - Build Settings - Search Metal
+
+Key | Value
+--|--
+Other Metal Compiler Flags| -fcikernel
+`MTLLINKER_FLAGS`  | -cikernel
+
+#### xcrun
+
 ```
 xcrun metal -fcikernel MyKernels.metal -o MyKernels.air
 xcrun metallib -cikernel MyKernels.air -o MyKernels.metallib
@@ -51,13 +72,13 @@ xcrun metallib -cikernel MyKernels.air -o MyKernels.metallib
 
 ### 3. Initialize CIKernel with function from Metal library
 
-#### New CIKernel API
+#### New [`CIKernel`](https://developer.apple.com/documentation/coreimage/cikernel) API
+
+
+* [`convenience init(functionName name: String, fromMetalLibraryData data: Data) throws`](https://developer.apple.com/documentation/coreimage/cikernel/2880194-init)
+* [`convenience init(functionName name: String, fromMetalLibraryData data: Data, outputPixelFormat format: CIFormat) throws`](https://developer.apple.com/documentation/coreimage/cikernel/2880195-init)
 
 ```swift
-init(functionName name: String, fromMetalLibraryData data: Data) throws
-init(functionName name: String, fromMetalLibraryData data: Data,
-    outputPixelFormat format: CIFormat) throws
-
 
 // Example of initializing CIKernels
 let url = Bundle.main.url(forResource: "default", withExtension: "metallib")!

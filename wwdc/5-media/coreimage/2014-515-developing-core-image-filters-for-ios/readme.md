@@ -26,31 +26,21 @@ Platform Differences
 ## [2.3 General Kernels - CIKernel](2.3-general-kernels-cikernel.md) | Tony Chu | 3119 | p200
 
 
+### [Motion Blur 2.0](2.3.1-motion-blur-2.md) | 3900 | p257
 
-Portability of General Kernels | 4323| p280
-
-OS X and iOS
-
-* Desktop-class kernel type with the same language syntax and semantics as OS X
-* New built-in filters on iOS ported from OS X using general kernels
+### [Square Kaleidoscope](2.3.2-square-kaleidoscope.md) | 4513
 
 
-### Performance Considerations
-
-Multiple render passes
-
-
-### Intermediate Buffers
-
-kCIContextWorkingFormat
-
-
-### [Square Kaleidoscope](2.3.1-square-kaleidoscope.md)
-
-
-Recommendations
-
-* Write a general kernel only when needed
-* Write a general kernel initially for rapid prototyping, then try replacing   with some combination of warp and color kernels
 
 ## 3 Platform Differences | 4840 | p315
+
+X | iOS | OS X
+--|--|--
+Renderers | GPU | CPU and GPU
+Control flow in language | Yes | No
+Kernel classes | 3 | 1
+CISampler | No | Yes
+DOD | CGRect| CIFilterShape
+ROI | Block Pointer | Selector
+[CIFilter setDefaults]|Automatic | Explicit
+[CIFilter customAttributes]|Class Method|Instance Method
