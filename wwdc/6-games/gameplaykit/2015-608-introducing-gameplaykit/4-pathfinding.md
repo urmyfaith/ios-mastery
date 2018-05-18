@@ -13,10 +13,14 @@
 
 * Abstract graph base class
 * Container of graph nodes
-* Dynamic add / remove nodes Connect new nodes
+* Dynamic add / remove nodes
+* Connect new nodes
 * Find paths between nodes
 * Two specializations
-* Grid graphs Obstacle graphs
+  * Grid graphs
+  * Obstacle graphs
+
+
 
 ### Overview
 * Find paths in navigation graphs
@@ -27,10 +31,11 @@
 - Dynamically modify graphs
 
 ### GKGridGraph
+
 - Specialized for a 2D Grid
 - Creates nodes on the grid
-- Cardinal connections
-- Optional diagonal connections
+  - Cardinal connections
+  - Optional diagonal connections
 - Easy add/remove of grid nodes
 
 

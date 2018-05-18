@@ -1,5 +1,6 @@
 # [2015 608 Introducing GameplayKit](2015-608-introducing-gameplaykit.md)
 
+[Video](https://developer.apple.com/videos/play/wwdc2015/608/)
 
 * Bruno Sommer
 * Ross Dexter
@@ -34,9 +35,7 @@
 ## [Agents, Goals, and Behaviors](3-agents-goals-and-behaviors.md) | 1230 | p19
 
 
-
-
-## Pathfinding || p29
+## [Pathfinding](4-pathfinding.md) | 2050| p29
 
 
 ## [MinMax AI](5-minmax-ai.md) - Ross Dexter || p51
