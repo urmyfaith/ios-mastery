@@ -1,4 +1,4 @@
-
+# [Metal]
 
 * 2014
   * [603 Working with Metal: Overview]
@@ -41,6 +41,32 @@ Session | Video | Note
 --|--|--
 602 Adopting Metal, Part 1|[Video](https://developer.apple.com/videos/play/wwdc2016/602/)|[Note](2016/602-adopting-metal-part-1.md)
 603 Adopting Metal, Part 2| [Video](https://developer.apple.com/videos/play/wwdc2016/603/)|[Note](2016/603-adopting-metal-part-2.md)
+604 What's New in Metal, Part 1|[Video](https://developer.apple.com/videos/play/wwdc2016/604)
+605 What's New in Metal, Part 2|[Video](https://developer.apple.com/videos/play/wwdc2016/605)
+
+
+Adopting Metal
+
+- Part One
+  - Fundamental Concepts
+  - Basic Drawing
+  - Lighting and Texturing
+- Part Two
+  - Dynamic Data Management
+  - CPU-GPU Synchronization
+  - Multithreaded Encoding
+
+What’s New in Metal
+
+- Part One
+  - Tessellation /
+  - Resource Heaps and Memoryless render targets
+  - Improved Tools
+- Part Two
+  - Function Specialization and Function Resource Read-Writes
+  - Wide Color and Texture Assets
+  - Additions to Metal Performance Shaders
+
 
 
 ## [2017](https://developer.apple.com/videos/wwdc2017/)
