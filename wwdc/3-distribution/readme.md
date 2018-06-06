@@ -1,5 +1,9 @@
+# 3xx Distribution
 
+## [2018]()
 
+- [301 What's New in App Store Connect](https://developer.apple.com/videos/play/wwdc2018/301)
+- [303 Automating App Store Connect](https://developer.apple.com/videos/play/wwdc2018/303)
 
 * [2016](https://developer.apple.com/videos/wwdc2016/)
   * 301 Introducing Expanded Subscriptions in iTunes Connect
