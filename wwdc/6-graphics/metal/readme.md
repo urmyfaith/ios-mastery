@@ -1,15 +1,5 @@
-# [Metal]
+# [Metal](https://developer.apple.com/documentation/metal) / [Topic Videos](https://developer.apple.com/videos/graphics-and-games/metal)
 
-* 2014
-  * [603 Working with Metal: Overview]
-  * [604 ](2014/604-working-with-metal-fundamentals.md)
-  * [605 ]()
-* 2015
-  * .
-* 2016
-  * .
-* 2017
-  * .
 
 ## [2018](https://developer.apple.com/videos/wwdc2018/)
 
@@ -21,6 +11,33 @@
 - [2018 611 Metal for VR](https://developer.apple.com/videos/play/wwdc2018/611/)
 - [2018 612 Metal Game Performance Optimization](https://developer.apple.com/videos/play/wwdc2018/612/)
 
+## [2017](https://developer.apple.com/videos/wwdc2017/)
+
+Session | Video | Note
+--|--|--
+[2017 601 Introducing Metal 2](https://developer.apple.com/videos/play/wwdc2017/601/)|[Note](2017/601-introducing-metal-2.md)
+[2017 603 VR with Metal 2](https://developer.apple.com/videos/play/wwdc2017/603/)|[Note](2017/603-vr-with-metal-2.md)
+[2017 607 Metal 2 Optimization and Debugging](https://developer.apple.com/videos/play/wwdc2017/607/)|[Note](2017/607-metal-2-optimization-and-debugging.md)
+[2017 608 Using Metal 2 for Compute](https://developer.apple.com/videos/play/wwdc2017/608/)|[Note](2017/608-using-metal-2-for-compute.md)
+
+
+## [2016](https://developer.apple.com/videos/wwdc2014/)
+
+Session  | Note | Contents
+---|---|---
+[2016 602 Adopting Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/602/)|[Note](2016/602-adopting-metal-part-1.md)|Fundamental Concepts / Basic Drawing / Lighting and Texturing
+[2016 603 Adopting Metal, Part 2](https://developer.apple.com/videos/play/wwdc2016/603/)|[Note](2016/603-adopting-metal-part-2.md) |  Dynamic Data Management / CPU-GPU Synchronization / Multithreaded Encoding
+[2016 604 What's New in Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/604)||Tessellation / Resource Heaps and Memoryless render targets / Improved Tools
+[2016 605 What's New in Metal, Part 2](https://developer.apple.com/videos/play/wwdc2016/605)|| Function Specialization and Function Resource Read-Writes / Wide Color and Texture Assets / Additions to Metal Performance Shaders
+
+
+## [2015](https://developer.apple.com/videos/wwdc2015/)
+
+Session | Video | Note
+---|---|---
+[2015 603 What's New in Metal, Part 1](https://developer.apple.com/videos/play/wwdc2015/603/)| [Note](2015/603-whats-new-in-metal-part-1.md) | Metal in review / New Features / Metal and App Thinning
+[2015 607 What's New in Metal, Part 2](https://developer.apple.com/videos/play/wwdc2015/607/)| [Note](2015/607-whats-new-in-metal-part-2.md) | Introducing MetalKit / Metal Performance Shaders
+[2015 610 Metal Performance Optimization Techniques](https://developer.apple.com/videos/wwdc2015/)| [Note](610-metal-performance-optimization-techniques.md) | Metal System Trace Tool / Metal Best Practices
 
 ## 2014
 
@@ -31,63 +48,16 @@ Session | Video | Note
 605 Working with Metal: Advanced|[Video](https://developer.apple.com/videos/play/wwdc2014/605/) | [Note](2014/605-working-with-metal-advanced.md)
 
 
-## [2015](https://developer.apple.com/videos/wwdc2015/)
-
-Session | Video | Note
---|--|--
-603 What's New in Metal, Part 1 |[Video](https://developer.apple.com/videos/play/wwdc2015/603/)| [Note](2015/603-whats-new-in-metal-part-1.md)
-607 What's New in Metal, Part 2 |[Video](https://developer.apple.com/videos/play/wwdc2015/607/)| [Note](2015/607-whats-new-in-metal-part-2.md)
-610 Metal Performance Optimization Techniques |[Video](https://developer.apple.com/videos/wwdc2015/)| [Note](610-metal-performance-optimization-techniques.md)
-
-
-* 603 : Metal in review / New Features / Metal and App Thinning
-* 607 : Introducing MetalKit / Metal Performance Shaders
-* 610 : Metal System Trace Tool / Metal Best Practices
-
-
-## 2016
-
-Session | Video | Note
---|--|--
-602 Adopting Metal, Part 1|[Video](https://developer.apple.com/videos/play/wwdc2016/602/)|[Note](2016/602-adopting-metal-part-1.md)
-603 Adopting Metal, Part 2| [Video](https://developer.apple.com/videos/play/wwdc2016/603/)|[Note](2016/603-adopting-metal-part-2.md)
-604 What's New in Metal, Part 1|[Video](https://developer.apple.com/videos/play/wwdc2016/604)
-605 What's New in Metal, Part 2|[Video](https://developer.apple.com/videos/play/wwdc2016/605)
-
-
-Adopting Metal
-
-- Part One
-  - Fundamental Concepts
-  - Basic Drawing
-  - Lighting and Texturing
-- Part Two
-  - Dynamic Data Management
-  - CPU-GPU Synchronization
-  - Multithreaded Encoding
-
-What’s New in Metal
-
-- Part One
-  - Tessellation /
-  - Resource Heaps and Memoryless render targets
-  - Improved Tools
-- Part Two
-  - Function Specialization and Function Resource Read-Writes
-  - Wide Color and Texture Assets
-  - Additions to Metal Performance Shaders
 
 
 
-## [2017](https://developer.apple.com/videos/wwdc2017/)
-
-Session | Video | Note
---|--|--
-601 Introducing Metal 2 |[Video](https://developer.apple.com/videos/play/wwdc2017/601/)|[Note](2017/601-introducing-metal-2.md)
-603 VR with Metal 2 |[Video](https://developer.apple.com/videos/play/wwdc2017/603/)|[Note](2017/603-vr-with-metal-2.md)
-607 Metal 2 Optimization and Debugging|[Video](https://developer.apple.com/videos/play/wwdc2017/607/)|[Note](2017/607-metal-2-optimization-and-debugging.md)
-608 Using Metal 2 for Compute |[Video](https://developer.apple.com/videos/play/wwdc2017/608/)|[Note](2017/608-using-metal-2-for-compute.md)
-601 |[Video]()|[Note]()
 
 
-https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf 2.0
+
+
+## https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf
+
+Date | Version
+---|---
+2017-9-12|2.0
+2018-6-4|2.1
