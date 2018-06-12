@@ -1,5 +1,5 @@
 
-# [607 What's New in Metal, Part 2](https://developer.apple.com/videos/play/wwdc2015/607/)
+# [2015 607 What's New in Metal, Part 2](https://developer.apple.com/videos/play/wwdc2015/607/)
 
 
 - Dan Omachi
@@ -54,14 +54,15 @@ https://developer.apple.com/library/prerelease/ios/samplecode/MetalPerformanceSh
 
 
 ### Performance
-Behind the scenes
-Choose the right algorithm
-Tune for
-Kernel radius
-Pixel format
-Memory hierarchy
-Number of pixels per thread Threadgroup dimensions
-CPU optimizations
+
+- Behind the scenes
+- Choose the right algorithm
+- Tune for
+- Kernel radius
+- Pixel format
+- Memory hierarchy
+- Number of pixels per thread Threadgroup dimensions
+- CPU optimizations
 
 
 ### In-place Operation
