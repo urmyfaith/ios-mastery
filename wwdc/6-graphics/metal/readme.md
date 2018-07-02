@@ -3,18 +3,20 @@
 
 ## [2018](https://developer.apple.com/videos/wwdc2018/)
 
-- [2018 604 Metal for OpenGL Developers](https://developer.apple.com/videos/play/wwdc2018/604/)
-- [2018 606 Metal for Ray Tracing Acceleration](https://developer.apple.com/videos/play/wwdc2018/606/)
-- [2018 607 Metal for Game Developers](https://developer.apple.com/videos/play/wwdc2018/607/)
-- [2018 608 Metal Shader Debugging and Profiling](https://developer.apple.com/videos/play/wwdc2018/608/)
-- [2018 609 Metal for Accelerating Machine Learning](https://developer.apple.com/videos/play/wwdc2018/609/)
-- [2018 611 Metal for VR](https://developer.apple.com/videos/play/wwdc2018/611/)
-- [2018 612 Metal Game Performance Optimization](https://developer.apple.com/videos/play/wwdc2018/612/)
+Session  | Note | Contents
+---|---|---
+[2018 604 Metal for OpenGL Developers](https://developer.apple.com/videos/play/wwdc2018/604/)
+[2018 606 Metal for Ray Tracing Acceleration](https://developer.apple.com/videos/play/wwdc2018/606/)
+[2018 607 Metal for Game Developers](https://developer.apple.com/videos/play/wwdc2018/607/)|[Note](2018-607-metal-for-game-developers)|Harnessing Parallelism /  Taking Explicit Control / Building GPU-Driven Pipelines / Optimizing for the A11 Bionic GPU / Bringing Fortnite to Metal
+[2018 608 Metal Shader Debugging and Profiling](https://developer.apple.com/videos/play/wwdc2018/608/)
+[2018 609 Metal for Accelerating Machine Learning](https://developer.apple.com/videos/play/wwdc2018/609/)
+[2018 611 Metal for VR](https://developer.apple.com/videos/play/wwdc2018/611/)
+[2018 612 Metal Game Performance Optimization](https://developer.apple.com/videos/play/wwdc2018/612/)|[Note](2018/612-metal-game-performance)|
 
 ## [2017](https://developer.apple.com/videos/wwdc2017/)
 
 Session | Video | Note
---|--|--
+---|---|---
 [2017 601 Introducing Metal 2](https://developer.apple.com/videos/play/wwdc2017/601/)|[Note](2017/601-introducing-metal-2.md)
 [2017 603 VR with Metal 2](https://developer.apple.com/videos/play/wwdc2017/603/)|[Note](2017/603-vr-with-metal-2.md)
 [2017 607 Metal 2 Optimization and Debugging](https://developer.apple.com/videos/play/wwdc2017/607/)|[Note](2017/607-metal-2-optimization-and-debugging.md)

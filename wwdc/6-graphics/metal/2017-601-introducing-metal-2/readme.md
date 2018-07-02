@@ -14,30 +14,20 @@
 Topic(speaker)|time|page
 --|--|--
 [Argument Buffers](1-argument-buffers.md) | 520
-Raster Order Groups (Richard Schreyer)| 2600|  p92
-ProMotion Displays | 3150 |
-Direct to Display | 3950 | p121
+[Raster Order Groups](2-raster-order-group.md)  (Richard Schreyer)| 2600|  p92
+[ProMotion Displays](3-promotion-displays.md)| 3150 |p107
+[Direct to Display](4-direct-to-display.md) | 3950 | p121
 Everything Else | 4550 | p140
 
 
 ## [Argument Buffers](1-argument-buffers.md) | 520
 
-## Raster Order Groups (Richard Schreyer)| 2600|  p92
+## [Raster Order Groups](2-raster-order-group.md)  (Richard Schreyer)| 2600|  p92
 
-
-* Ordered memory access from fragment shaders
-* Enables new rendering techniques
-  * Order-independent transparency
-  * Dual-layer GBuffers
-  * Voxelization
-  * Custom blending
-
-### Fragment Shaders with Blending
-
-## ProMotion Displays | 3150 |
-
+## ProMotion Displays | 3150 | p92
 
 ## Direct to Display | 3950 | p121
+
 
 ## Everything Else | 4550 | p140
 
