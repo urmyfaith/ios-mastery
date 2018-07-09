@@ -1,11 +1,12 @@
 
-# [208 Natural Language Processing and your Apps](https://developer.apple.com/videos/play/wwdc2017/208/)
+# [2017 208 Natural Language Processing and your Apps](https://developer.apple.com/videos/play/wwdc2017/208/)
 
 Speakers
 
 * Vivek Kumar Rangarajan Sridhar, Software Engineering Manager
 * Doug Davidson, Senior Engineer
 
+Also see [2018 713 Introducing Natural Language Framework](https://developer.apple.com/videos/play/wwdc2018/713/)
 
 TOC
 
@@ -113,6 +114,6 @@ English French Italian German Spanish Portuguese Russian Turkish
 
 ## Debugging Hints
 
-Tags are NSLinguisticTagOtherWord
-Model not downloaded
-Explicitly set language if known
+- Tags are NSLinguisticTagOtherWord
+- Model not downloaded
+- Explicitly set language if known

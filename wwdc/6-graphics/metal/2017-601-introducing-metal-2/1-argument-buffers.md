@@ -5,11 +5,11 @@
 
 property|in Metal as
 ---|---
-- roughness|MTLBuffer
-- intensity|MTLBuffer
-- surfaceTexture|
-- specularTexture
-- sampler|
+roughness|MTLBuffer
+intensity|MTLBuffer
+surfaceTexture|
+specularTexture
+sampler|
 
 ### Traditional and New
 

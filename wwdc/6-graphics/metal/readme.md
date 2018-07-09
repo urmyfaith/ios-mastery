@@ -31,6 +31,7 @@ Session  | Note | Contents
 [2016 603 Adopting Metal, Part 2](https://developer.apple.com/videos/play/wwdc2016/603/)|[Note](2016/603-adopting-metal-part-2.md) |  Dynamic Data Management / CPU-GPU Synchronization / Multithreaded Encoding
 [2016 604 What's New in Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/604)||Tessellation / Resource Heaps and Memoryless render targets / Improved Tools
 [2016 605 What's New in Metal, Part 2](https://developer.apple.com/videos/play/wwdc2016/605)|| Function Specialization and Function Resource Read-Writes / Wide Color and Texture Assets / Additions to Metal Performance Shaders
+[2016 606 Advanced Metal Shader Optimization](https://developer.apple.com/videos/play/wwdc2016/606)|[Note](2016/2016-606-advanced-metal-shader-optimization)|
 
 
 ## [2015](https://developer.apple.com/videos/wwdc2015/)
@@ -43,14 +44,11 @@ Session | Video | Note
 
 ## 2014
 
-Session | Video | Note
---|--|--
-603 Working with Metal: Overview|[Video](https://developer.apple.com/videos/play/wwdc2014/603/)|[Note](2014/603-working-with-metal-overview.md)
-604 |[Video](https://developer.apple.com/videos/play/wwdc2014/604/)|[Note](2014/604-working-with-metal-fundamentals.md)
-605 Working with Metal: Advanced|[Video](https://developer.apple.com/videos/play/wwdc2014/605/) | [Note](2014/605-working-with-metal-advanced.md)
-
-
-
+ Video | Note|Contents
+---|---|---
+[2014 603 Working with Metal: Overview](https://developer.apple.com/videos/play/wwdc2014/603/)|[Note](2014/603-working-with-metal-overview.md)
+[2014 604 Working with Metal: Fundamentals](https://developer.apple.com/videos/play/wwdc2014/604/)|[Note](2014/604-working-with-metal-fundamentals.md)
+[2014 605 Working with Metal: Advanced](https://developer.apple.com/videos/play/wwdc2014/605/) | [Note](2014/605-working-with-metal-advanced.md)
 
 
 
