@@ -1,8 +1,34 @@
 
 
-[MCNearbyServiceAdvertiser](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser)|[MCNearbyServiceAdvertiserDelegate](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate)
+## [MCNearbyServiceAdvertiser](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser)
+
+init(peer myPeerID: MCPeerID, 
+discoveryInfo info: [String : String]?, 
+serviceType: String)
+
+weak var delegate: MCNearbyServiceAdvertiserDelegate? { get set }
+
+var discoveryInfo: [String : String]? { get }
+
+var myPeerID: MCPeerID { get }
+
+var serviceType: String { get }
+
+func startAdvertisingPeer()
+
+func stopAdvertisingPeer()
 
 
+
+## [MCNearbyServiceAdvertiserDelegate](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate)
+
+optional func advertiser(_ advertiser: MCNearbyServiceAdvertiser, 
+didNotStartAdvertisingPeer error: Error)
+
+func advertiser(_ advertiser: MCNearbyServiceAdvertiser, 
+didReceiveInvitationFromPeer peerID: MCPeerID, 
+    withContext context: Data?, 
+invitationHandler: @escaping (Bool, MCSession?) -> Void)
 
 ## [MCNearbyServiceBrowser](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowser)|
 
