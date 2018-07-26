@@ -1,5 +1,5 @@
 
-# [223 Drag and Drop with Collection and Table View](https://developer.apple.com/videos/play/wwdc2017/223/)
+# [2017 223 Drag and Drop with Collection and Table View](https://developer.apple.com/videos/play/wwdc2017/223/)
 
 
 * Tyler Fox, UIKit Engineer
@@ -7,37 +7,48 @@
 * Steve Breen, UIKit Engineer
 
 
-Drag and Drop API
-Collection and Table View
-Focused around cells and index paths Fluid animations
-Asynchronous data loading Consistent API for both
+### Drag and Drop API - Collection and Table View
+
+- Focused around cells and index paths
+- Fluid animations
+- Asynchronous data loading
+- Consistent API for both
 
 
 Agenda
 
-* Basics
-* Perfecting drops
-* Final touches
+Topic -- Speaker|Time|Page
+---|---|---
+Basics -- Mohammed | 
+[Perfecting Drops](2-perfecting-drops.md) -- Tyler |  1120 | p34
+[Final touches](3-final-touches.md) -- Tyler|3030| p93
+
 
 ## Basics
 
 ### Beginning a Drag
 
 One required method on dragDelegate
-```
+
+```swift
 
 func collectionView(_: UICollectionView,  itemsForBeginning: UIDragSession,
 at: IndexPath) -> [UIDragItem]
 
 ```
+
 Return an empty array to prevent the drag
 
 ### Adding Items to a Drag Session
 
 Opt-in via optional method on dragDelegate
-`func collectionView(_: UICollectionView,  itemsForAddingTo: UIDragSession,
-at: IndexPath,
-point: CGPoint) -> [UIDragItem]`
+
+```swift
+func collectionView(_: UICollectionView,                
+    itemsForAddingTo: UIDragSession,
+    at: IndexPath,
+    point: CGPoint) -> [UIDragItem]
+```
 
 Return an empty array to handle the tap normally
 
@@ -45,42 +56,24 @@ Return an empty array to handle the tap normally
 
 One required method on dropDelegate
 
+```swift
+func collectionView(_: UICollectionView, 
+performDropWith: UICollectionViewDropCoordinator)
+```
+
 Drop coordinator
 
-* Access dropped items
-* Update collection/table view
-* Specify animations
+- Access dropped items
+- Update collection/table view
+- Specify animations
 
 
-## Demo
+### Demo - • Drag and Drop basics [720]
 
 
-## Drop Animation
+## [Perfecting Drops](2-perfecting-drops.md) -- Tyler |  1120 | p34
 
-
-## Introducing Placeholders (28)
-
-
-### the Placeholder Context
-
-
-## Demo Placeholder
-
-
-## Final touches
-
-
-### Reordering
-
-
-### Spring loading
-
-## Customizing Cell Appearance
-
-.none .lifting .dragging
-
-### Customizing the Drag Preview
-
+## [Final touches](3-final-touches.md) -- Tyler|3030| p93
 
 ### Next Steps
 
