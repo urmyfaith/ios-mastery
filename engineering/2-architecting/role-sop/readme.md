@@ -19,18 +19,19 @@ As you may find, I put one-digit number as prefix for each role. The rule of thu
 
 Logically, each tier has its meaning. 
 
-Tier|Meaning
----|---
+Tier|Meaning|Example
+---|---|---
 0|language level, design pattern
 1|scale value. extension for collections (Sequence, Array, etc)
-2|data model/object, or model for mechanism (such as request, response, in-memory) , white collar
-3|mechanism. blue collar, get hands in system or environment (IO, process) which may get errors/exceptions. system-specific 
-4|(data/IO) director. threading issue is addressed here (Tier 0-3 do not address it)
+2|data model/object, or model for mechanism (such as request, response, in-memory) , white collar|CDModel, Logic
+3|mechanism. blue collar, get hands in system or environment (IO, process) which may get errors/exceptions. system-specific|URLCommand, CDStore
+4|(data/IO) director. threading issue is addressed here (Tier 0-3 do not address it)|ErrorHandler
 5|fundmental of CLLayer and UIView. Styling. Simple value-specific controls (UIControl). Layouts.
 6|Complex views (UITableView, UICollection, MKMapView), model-specific view 
 7|UIVC (UIViewController) BarButtonItems (some are injected by UIStory)
-8|UIStory
+8|UIStory, (non-UI) Workflow
 9|App
+
 
 
 ## Roles and Responsibility for types(protocol, classes, structs, etc)

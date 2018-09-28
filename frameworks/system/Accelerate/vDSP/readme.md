@@ -6,14 +6,14 @@
 - [Vector Generation, Filling, and Clearing](vector-generation-filling-clearing.md)
   - Vector Generation
   - Vector Clear and Fill Functions
-- Vector Reduction
+- [Vector Reduction](vector-reduction.md)
   - Vector Extrema Calculation
   - Vector Average Calculation
   - Vector Summation
-- Vector Geometry Functions
+- [Vector Geometry Functions](vector-geometry-functions.md)
   - Vector-to-Vector Distance and Pythagorean Computation
   - Dot Product Calculation
-- Vector-Scalar Arithmetic
+- [Vector-Scalar Arithmetic](vector-scale-arithmetic.md)
   - Basic Arithmetic Functions
   - Multiply-Add Functions
   - Multiply-Subtract Functions

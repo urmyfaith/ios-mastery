@@ -1,5 +1,4 @@
-
-# IO 
+# Roles for IO 
 
 Following concerns are covered in IO part.
 
@@ -15,10 +14,10 @@ Families By Persistence Media and Technology
 - CD
 
 
-
 ## Format 
 
 Format for storage. Loosely speaking, there are at least 2 purposes for string/text. One is to interact with user to read and input/select. The other is for formatting the data structure or model, to be saved in file or transmitted via network. 
+
 
 ## Kinds of persistence media 
 
@@ -37,18 +36,11 @@ Format for storage. Loosely speaking, there are at least 2 purposes for string/t
 
 ## FS (File System) family 
 
-## URL (HTTP) family 
-
-## 2-URLRequestFactory
-
-## 3-URLCommand
-
-## 4-URLDirector
-
-
 ## CD (CoreData) family
 
 
-
-
-
+Tier|[FS (File System)](fs)|[URL](url)|[CD (CoreData)](cd)|Sensing
+---|---|---|---|---
+2|Format|URLRequestFactory|CDModel<br/>CDModelDict
+3|Addressor, FSLoader|URLCommand, URLErrorHandler|CDStore<br/>CDImporter<br/>CDExporter|Emitter
+4||URLDirector
