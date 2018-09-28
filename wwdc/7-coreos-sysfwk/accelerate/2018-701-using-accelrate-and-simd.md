@@ -4,7 +4,7 @@
 
 Learn how to use sophisticated Signal and Image Processing techniques to bring higher performance to your apps while lowering battery consumption. See compelling use cases for the Accelerate framework with interactive demos. Explore using simd—a valuable addition that effortlessly brings vector programming to your apps.
 
-3648
+Length: 36:48
 
 
 d 
@@ -15,7 +15,7 @@ x
 - Luke Chang, CoreOS, Vector and Numerics
 
 
-- A ccelerate
+- Accelerate
 - vDSP
 - simd
 - vImage
