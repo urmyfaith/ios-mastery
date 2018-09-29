@@ -12,6 +12,7 @@ Speakers
 - Luke Chang, CoreOS, Vector and Numerics
 
 TOC 
+
 Topic|Speaker|Time|Page
 ---|---|---|---
 Accelerate (Overview)|Matthew Badin|1:30|p3
